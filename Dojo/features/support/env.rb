@@ -3,14 +3,15 @@ require 'cucumber'
 require 'selenium-webdriver'
 require 'capybara'
 require 'capybara/cucumber'
-#require 'page-object'
-#require 'data_magic'
+require 'page-object'
+require 'data_magic'
+require 'pry'
 
-World(PageObject::PageFactory)
+#World(PageObject::PageFactory)
 
 #CONFIGURANDO O DRIVER CAPYBARA
 Capybara.register_driver :selenium do |app|
- Capybara::selenium::Driver.new(app, :browser => :chrome)
+ Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
 
 #SETANDO A CONFIGURAÇÃO DO  DRIVER COMO PADRÃO

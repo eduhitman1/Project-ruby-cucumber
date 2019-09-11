@@ -1,12 +1,12 @@
 #language: pt
 #utf-8
 
-Funcionalidade: Buscar Agencias
-      Eu como cliente do banco
-      Quero procurar uma agencia dentro do brasil
-      Para saber suas informacoes de contato
+Funcionalidade: Inserir uma conta
+      Eu como cliente 
+      Quero cadastrar uma conta no site
+      Para saber suas informacoes de saldo
 
-Cenario: Buscar agencia por CEP valido
-    Dado que esteja na jome do site do banco
-    Quando buscar uma agencia pelo CEP
-    Entao apresentara as agencias disponiveis
+Cenario: entrar no sistema 
+    Dado o site para home page
+    Quando entrada de email e senha
+    Entao valida homePage do usuario
